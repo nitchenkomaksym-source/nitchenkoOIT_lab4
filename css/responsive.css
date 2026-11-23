@@ -1,0 +1,67 @@
+@media (max-width: 1100px) {
+    .app-container { grid-template-columns: 220px 1fr; }
+    .chat-sidebar { display: none; }
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .sidebar {
+        position: static;
+        padding: 0.8rem 1rem;
+    }
+
+    .brand {
+        padding: 0;
+    }
+
+    .menu-burger-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .side-nav {
+        display: none;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border);
+    }
+
+    #menu-toggle:checked ~ .app-container .side-nav {
+        display: block;
+    }
+
+    .submenu {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        margin-left: 1.5rem;
+        margin-top: 0.3rem;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+    }
+
+    .dropdown:hover .submenu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .promo-grid { grid-template-columns: 1fr; }
+    .topbar { flex-direction: column; align-items: stretch; }
+    .search-bar { max-width: 100%; }
+
+    .btn-signin {
+        position: fixed;
+        bottom: 25px;
+        left: 20px;
+        z-index: 1000;
+        box-shadow: 0 4px 18px rgba(0, 230, 118, 0.45);
+        padding: 0.8rem 1.4rem;
+        font-size: 0.9rem;
+    }
+}

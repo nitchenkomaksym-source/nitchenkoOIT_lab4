@@ -1,0 +1,13 @@
+@mixin card-surface {
+    background: $bg-card;
+    border: 1px solid $border;
+    border-radius: $radius;
+}
+
+@mixin pill-button($bg, $color) {
+    background: $bg;
+    color: $color;
+    font-weight: 700;
+    border-radius: 9999px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}

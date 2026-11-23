@@ -1,0 +1,105 @@
+@import "variables";
+@import "mixins";
+
+.carousel {
+    position: relative;
+}
+
+.carousel-radio {
+    display: none;
+}
+
+.carousel-viewport {
+    overflow: hidden;
+    border-radius: $radius;
+}
+
+.carousel-track {
+    display: flex;
+    width: 300%;
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.review-item.carousel-slide {
+    @include card-surface;
+    width: calc(100% / 3);
+    flex-shrink: 0;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+
+.review-stars {
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    font-size: 0.9rem;
+    color: $text-dim;
+    font-style: italic;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    span {
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: $green;
+    }
+}
+
+#rev-1:checked ~ .carousel-viewport .carousel-track {
+    transform: translateX(0%);
+}
+
+#rev-2:checked ~ .carousel-viewport .carousel-track {
+    transform: translateX(-33.3333%);
+}
+
+#rev-3:checked ~ .carousel-viewport .carousel-track {
+    transform: translateX(-66.6666%);
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.carousel-dot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: $bg-card;
+    border: 1px solid $border;
+    color: $text-dim;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+        border-color: $green;
+        color: $text;
+        transform: translateY(-2px);
+    }
+}
+
+#rev-1:checked ~ .carousel-nav label[for="rev-1"],
+#rev-2:checked ~ .carousel-nav label[for="rev-2"],
+#rev-3:checked ~ .carousel-nav label[for="rev-3"] {
+    background: $green;
+    color: #000;
+    border-color: $green;
+}

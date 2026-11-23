@@ -1,0 +1,79 @@
+.panel-form label,
+.form-caption {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-dim);
+    margin-bottom: 0.3rem;
+}
+
+.panel-form input[type="text"],
+.panel-form input[type="email"],
+.panel-form input[type="password"],
+.panel-form select,
+.panel-form textarea {
+    width: 100%;
+    background: var(--bg-input);
+    border: 1px solid var(--border);
+    color: #fff;
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.panel-form input:focus,
+.panel-form select:focus,
+.panel-form textarea:focus {
+    border-color: var(--green);
+}
+
+.panel-form input:required:valid,
+.panel-form textarea:required:valid {
+    border-color: var(--green);
+    box-shadow: 0 0 0 1px rgba(0, 230, 118, 0.25);
+}
+
+.panel-form input:required:invalid:not(:placeholder-shown),
+.panel-form textarea:required:invalid:not(:placeholder-shown) {
+    border-color: #ef4444;
+    box-shadow: 0 0 0 1px rgba(239, 68, 68, 0.25);
+}
+
+.field-hint {
+    display: block;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.panel-form input:required:invalid:not(:placeholder-shown) + .field-hint,
+.panel-form textarea:required:invalid:not(:placeholder-shown) + .field-hint {
+    color: #f87171;
+}
+
+.panel-form input:required:valid + .field-hint,
+.panel-form textarea:required:valid + .field-hint {
+    color: var(--green);
+}
+
+.radio-wrap { display: flex; gap: 1.2rem; margin-bottom: 0.8rem; }
+.radio-wrap label { display: inline-flex; align-items: center; gap: 0.4rem; cursor: pointer; }
+.btn-row { display: flex; gap: 0.6rem; margin-top: 0.4rem; }
+
+.btn-green,
+.btn-ghost {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-green { background: var(--green); color: #000; border: none; font-weight: 700; }
+.btn-green:hover { background: #00c853; }
+.btn-ghost { background: transparent; color: var(--text-dim); border: 1px solid var(--border); }

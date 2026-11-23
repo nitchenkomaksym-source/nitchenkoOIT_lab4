@@ -1,0 +1,13 @@
+:root {
+    --bg-page: #080a0f;
+    --bg-panel: #0e121a;
+    --bg-card: #151a24;
+    --bg-input: #0b0e14;
+    --border: #1e2532;
+    --green: #00e676;
+    --text: #ffffff;
+    --text-dim: #94a3b8;
+    --text-muted: #526071;
+    --font: 'Inter', system-ui, sans-serif;
+    --radius: 12px;
+}

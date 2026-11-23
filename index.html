@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DotaHub — Головна</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/mobile-menu.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/signin-btn.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/button-up.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="top-anchor"></div>
+<input type="checkbox" id="menu-toggle" class="state-toggle" aria-hidden="true">
+<input type="checkbox" id="modal-toggle" class="state-toggle" aria-hidden="true">
+
+<div class="app-container">
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-title">
+                <span class="brand-icon">🛡️</span>
+                <h2>DotaHub</h2>
+            </div>
+            <label for="menu-toggle" class="menu-burger-btn" aria-label="Відкрити меню">☰</label>
+        </div>
+
+        <nav class="side-nav" id="main-nav">
+            <ul>
+                <li class="active"><a href="index.html"><span class="icon">🏠</span> Головна</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="dropdown-toggle"><span class="icon">⚔️</span> Сервіси та Герої <span class="arrow">▼</span></a>
+                    <ul class="submenu">
+                        <li><a href="services.html#heroes">Керрі / Мід</a></li>
+                        <li><a href="services.html#coaching">Тренування</a></li>
+                        <li><a href="services.html#analytics">Аналітика</a></li>
+                    </ul>
+                </li>
+                <li><a href="form.html"><span class="icon">📋</span> Анкетування та Зв'язок</a></li>
+                <li><a href="invitation.html"><span class="icon">✉️</span> Запрошення на турнір</a></li>
+                <li><a href="bootstrap.html"><span class="icon">🅱️</span> Bootstrap версія</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="topbar">
+            <form class="search-bar" role="search" method="get" action="/search">
+                <input type="search" placeholder="Пошук героїв, збірок, гравців...">
+                <button type="submit">🔍</button>
+            </form>
+            <label for="modal-toggle" class="btn-signin">🔑 Sign in</label>
+        </header>
+
+        <main class="content-area">
+            <section class="promo-grid">
+                <article class="promo-card promo-green">
+                    <span class="promo-tag">🎁 Dota Plus</span>
+                    <h3>Отримай бонусний гайд</h3>
+                    <p>Аналітика матчів та поради щодо вибору героїв у поточному патчі.</p>
+                    <a href="form.html" class="btn-banner">Заповнити анкету</a>
+                </article>
+
+                <article class="promo-card promo-gold">
+                    <span class="promo-tag">⭐ Battle Pass</span>
+                    <h3>Запрошення на турнір</h3>
+                    <p>Відкрий іменний конверт-запрошення на весняний кубок DotaHub.</p>
+                    <a href="invitation.html" class="btn-banner-outline">Відкрити запрошення</a>
+                </article>
+            </section>
+
+            <section id="recent-matches" class="section-block">
+                <div class="section-title">
+                    <span class="title-icon">🏆</span>
+                    <h2>Останні перемоги (Recent Wins)</h2>
+                </div>
+                <div class="recent-scroll">
+                    <div class="mini-card">
+                        <div class="card-head"><span>Omen...</span> <span class="pill-green">Win</span></div>
+                        <p class="match-info">Invoker</p>
+                        <p class="match-score">+30 MMR</p>
+                        <span class="match-time">2 хв тому</span>
+                    </div>
+                    <div class="mini-card">
+                        <div class="card-head"><span>CarryGod</span> <span class="pill-green">Win</span></div>
+                        <p class="match-info">Juggernaut</p>
+                        <p class="match-score">+25 MMR</p>
+                        <span class="match-time">5 хв тому</span>
+                    </div>
+                    <div class="mini-card">
+                        <div class="card-head"><span>OfflaneKing</span> <span class="pill-green">Win</span></div>
+                        <p class="match-info">Centaur</p>
+                        <p class="match-score">+30 MMR</p>
+                        <span class="match-time">8 хв тому</span>
+                    </div>
+                    <div class="mini-card">
+                        <div class="card-head"><span>Mag...</span> <span class="pill-green">Win</span></div>
+                        <p class="match-info">Magnus</p>
+                        <p class="match-score">+40 MMR</p>
+                        <span class="match-time">12 хв тому</span>
+                    </div>
+                    <div class="mini-card">
+                        <div class="card-head"><span>AntiM...</span> <span class="pill-green">Win</span></div>
+                        <p class="match-info">Anti-Mage</p>
+                        <p class="match-score">+25 MMR</p>
+                        <span class="match-time">15 хв тому</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="interactive-banner" class="section-block">
+                <div class="section-title">
+                    <span class="title-icon">⚡</span>
+                    <h2>Огляд нового патчу (Hover Effect)</h2>
+                </div>
+                <div class="overlay-card">
+                    <img src="images/kez.jpg" alt="Featured Hero" class="overlay-img">
+                    <div class="overlay-content">
+                        <span class="badge">NEW HERO</span>
+                        <h3>Kez — Майстер ближнього бою</h3>
+                        <p>Наведіть курсор для перегляду арту</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="reviews" class="section-block">
+                <div class="section-title">
+                    <span class="title-icon">💬</span>
+                    <h2>Відгуки користувачів про DotaHub</h2>
+                </div>
+
+                <div class="carousel">
+                    <input type="radio" name="reviews-slide" id="rev-1" class="carousel-radio" checked>
+                    <input type="radio" name="reviews-slide" id="rev-2" class="carousel-radio">
+                    <input type="radio" name="reviews-slide" id="rev-3" class="carousel-radio">
+
+                    <div class="carousel-viewport">
+                        <div class="carousel-track">
+                            <article class="review-item carousel-slide">
+                                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                                <p class="review-text">«Найзручніша платформа для пошуку адекватного паті. Знайшов саппорта за 5 хвилин і підняв 500 MMR!»</p>
+                                <div class="review-author">
+                                    <div class="msg-avatar green-av">D</div>
+                                    <span>Danil 'Dendi'</span>
+                                </div>
+                            </article>
+
+                            <article class="review-item carousel-slide">
+                                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                                <p class="review-text">«Аналітика патчу 7.41 дуже точна. Збірки на керрі-героїв відповідають актуальній меті турнірів.»</p>
+                                <div class="review-author">
+                                    <div class="msg-avatar blue-av">R</div>
+                                    <span>Roman_RAMZES</span>
+                                </div>
+                            </article>
+
+                            <article class="review-item carousel-slide">
+                                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                                <p class="review-text">«Дуже стильний темний інтерфейс, зручний чат і швидка робота на смартфоні. Рекомендую всім!»</p>
+                                <div class="review-author">
+                                    <div class="msg-avatar orange-av">M</div>
+                                    <span>Mira_Pos4</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="carousel-nav">
+                        <label for="rev-1" class="carousel-dot">1</label>
+                        <label for="rev-2" class="carousel-dot">2</label>
+                        <label for="rev-3" class="carousel-dot">3</label>
+                    </div>
+                </div>
+            </section>
+
+            <section id="news" class="section-block">
+                <div class="section-title">
+                    <span class="title-icon">📰</span>
+                    <h2>Останні оновлення гри</h2>
+                </div>
+                <article class="news-box">
+                    <h3>Патч 7.41: Ребаланс центральної лінії</h3>
+                    <p><small>Опубліковано: <time datetime="2026-06-05">5 червня 2026</time></small></p>
+                    <p>Змінено механіку нейтральних кріпів та вроджених здібностей для більшості героїв контролю.</p>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <aside class="chat-sidebar">
+        <div class="chat-header">
+            <div class="chat-title">
+                <span class="icon">💬</span>
+                <h3>Global Chat</h3>
+            </div>
+            <div class="chat-online">
+                <span class="dot"></span> 1,247 online
+            </div>
+        </div>
+
+        <div class="chat-messages">
+            <div class="chat-msg">
+                <div class="msg-avatar green-av">C</div>
+                <div class="msg-body">
+                    <div class="msg-top">
+                        <span class="user">CentaurGod</span>
+                        <span class="time">2:34 PM</span>
+                        <span class="tag-win">Win!</span>
+                    </div>
+                    <p class="msg-text">Апнув вчора владика на кентаврі! Чіловий герой.</p>
+                </div>
+            </div>
+
+            <div class="chat-msg">
+                <div class="msg-avatar blue-av">M</div>
+                <div class="msg-body">
+                    <div class="msg-top">
+                        <span class="user">MagPos3</span>
+                        <span class="time">2:35 PM</span>
+                    </div>
+                    <p class="msg-text">Хто зараз піде в паті на рейтинг? Треба +1 саппорт.</p>
+                </div>
+            </div>
+
+            <div class="chat-msg">
+                <div class="msg-avatar purple-av">J</div>
+                <div class="msg-body">
+                    <div class="msg-top">
+                        <span class="user">JuggLover</span>
+                        <span class="time">2:36 PM</span>
+                    </div>
+                    <p class="msg-text">Новий патч 7.41 топовий, джаггер знову навалює 🔥</p>
+                </div>
+            </div>
+
+            <div class="chat-msg">
+                <div class="msg-avatar orange-av">A</div>
+                <div class="msg-body">
+                    <div class="msg-top">
+                        <span class="user">AM_Farmer</span>
+                        <span class="time">2:37 PM</span>
+                    </div>
+                    <p class="msg-text">Батлф'юрі на 12 хвилині — виграли гру без шансів.</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<a href="#top-anchor" class="btn-scroll-top" title="Повернутися нагору">▲</a>
+
+<div id="auth-modal" class="modal-overlay">
+    <label for="modal-toggle" class="modal-backdrop" aria-label="Закрити модальне вікно"></label>
+    <div class="modal-box">
+        <label for="modal-toggle" class="modal-close" aria-label="Закрити">&times;</label>
+        <div class="section-title">
+            <span class="title-icon">🔑</span>
+            <h2>Авторизація DotaHub</h2>
+        </div>
+        <form class="panel-form" action="/login" method="post">
+            <label for="m-email">Електронна пошта:</label>
+            <input type="email" id="m-email" name="email" placeholder="example@mail.com" required>
+            <span class="field-hint">Введіть коректну електронну пошту.</span>
+
+            <label for="m-pass">Пароль (мін. 6 символів):</label>
+            <input type="password" id="m-pass" name="password" minlength="6" placeholder="Введіть пароль" required>
+            <span class="field-hint">Пароль має містити щонайменше 6 символів.</span>
+
+            <div class="btn-row" style="margin-top: 1rem;">
+                <button type="submit" class="btn-green" style="width: 100%;">Увійти</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 DotaHub. Лабораторна робота №4.</p>
+</footer>
+
+</body>
+</html>

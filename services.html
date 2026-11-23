@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DotaHub — Сервіси та Герої</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/mobile-menu.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/signin-btn.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/button-up.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+
+<div id="top-anchor"></div>
+<input type="checkbox" id="menu-toggle" class="state-toggle" aria-hidden="true">
+<input type="checkbox" id="modal-toggle" class="state-toggle" aria-hidden="true">
+
+<div class="app-container">
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-title">
+                <span class="brand-icon">🛡️</span>
+                <h2>DotaHub</h2>
+            </div>
+            <label for="menu-toggle" class="menu-burger-btn" aria-label="Відкрити меню">☰</label>
+        </div>
+
+        <nav class="side-nav" id="main-nav">
+            <ul>
+                <li><a href="index.html"><span class="icon">🏠</span> Головна</a></li>
+                <li class="active" class="dropdown">
+                    <a href="services.html" class="dropdown-toggle"><span class="icon">⚔️</span> Сервіси та Герої <span class="arrow">▼</span></a>
+                    <ul class="submenu">
+                        <li><a href="services.html#heroes">Керрі / Мід</a></li>
+                        <li><a href="services.html#coaching">Тренування</a></li>
+                        <li><a href="services.html#analytics">Аналітика</a></li>
+                    </ul>
+                </li>
+                <li><a href="form.html"><span class="icon">📋</span> Анкетування та Зв'язок</a></li>
+                <li><a href="invitation.html"><span class="icon">✉️</span> Запрошення на турнір</a></li>
+                <li><a href="bootstrap.html"><span class="icon">🅱️</span> Bootstrap версія</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header class="topbar">
+            <form class="search-bar" role="search" method="get" action="/search">
+                <input type="search" placeholder="Пошук героїв, збірок, гравців...">
+                <button type="submit">🔍</button>
+            </form>
+            <label for="modal-toggle" class="btn-signin">🔑 Sign in</label>
+        </header>
+
+        <main class="content-area">
+            <section id="heroes" class="section-block">
+                <div class="section-title-wrap">
+                    <div class="section-title">
+                        <span class="title-icon">⚡</span>
+                        <h2>Метові герої та збірки (Top Picks)</h2>
+                    </div>
+                    <span class="count-badge">3 героя</span>
+                </div>
+
+                <div class="heroes-grid">
+                    <article class="hero-item">
+                        <div class="badge-group">
+                            <span class="badge-tag green">Popular</span>
+                            <span class="badge-tag gold">Tier S</span>
+                        </div>
+                        <img src="images/invoker.jpg" alt="Invoker">
+                        <h3>Invoker</h3>
+                        <p>Позиція: 2 (Мід). Контроль та бурст-шкода.</p>
+                        <a href="form.html">Замовити розбір</a>
+                    </article>
+
+                    <article class="hero-item">
+                        <div class="badge-group">
+                            <span class="badge-tag blue">New</span>
+                            <span class="badge-tag red">Hot</span>
+                        </div>
+                        <img src="images/kez.jpg" alt="Kez">
+                        <h3>Kez</h3>
+                        <p>Позиція: 1 (Керрі). Спритність, катана та сай.</p>
+                        <a href="form.html">Замовити розбір</a>
+                    </article>
+
+                    <article class="hero-item">
+                        <div class="badge-group">
+                            <span class="badge-tag green">Popular</span>
+                        </div>
+                        <img src="images/arc_warden.jpg" alt="Arc Warden">
+                        <h3>Arc Warden</h3>
+                        <p>Позиція: 1 / 2. Спліт-пуш та контроль карти.</p>
+                        <a href="form.html">Замовити розбір</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="coaching" class="section-block">
+                <div class="section-title">
+                    <span class="title-icon">🎯</span>
+                    <h2>Сервіси спільноти DotaHub</h2>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">📊</div>
+                        <h3>Аналітика реплеїв</h3>
+                        <p>Детальний розбір помилок на лінії, таймінгів стаків та переміщень по карті.</p>
+                        <div class="service-price">Безкоштовно з Dota Plus</div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">🤝</div>
+                        <h3>Підбір команди 5x5</h3>
+                        <p>Пошук тіммейтів за рейтингом (від Рекрута до Титана) та основною роллю.</p>
+                        <div class="service-price">24/7 Matchmaking</div>
+                    </article>
+
+                    <article class="service-card" id="analytics">
+                        <div class="service-icon">🏆</div>
+                        <h3>Щотижневі міні-турніри</h3>
+                        <p>Кастомні лобі серед учасників факультету та спільноти з призовим фондом.</p>
+                        <div class="service-price">Реєстрація відкрита</div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <aside class="chat-sidebar">
+        <div class="chat-header">
+            <div class="chat-title">
+                <span class="icon">💬</span>
+                <h3>Global Chat</h3>
+            </div>
+            <div class="chat-online">
+                <span class="dot"></span> 1,247 online
+            </div>
+        </div>
+
+        <div class="chat-messages">
+            <div class="chat-msg">
+                <div class="msg-avatar green-av">C</div>
+                <div class="msg-body">
+                    <div class="msg-top">
+                        <span class="user">CentaurGod</span>
+                        <span class="time">2:34 PM</span>
+                        <span class="tag-win">Win!</span>
+                    </div>
+                    <p class="msg-text">Апнув вчора владика на кентаврі! Чіловий герой.</p>
+                </div>
+            </div>
+
+            <div class="chat-msg">
+                <div class="msg-avatar blue-av">M</div>
+                <div class="msg-body">
+                    <div class="msg-top">
+                        <span class="user">MagPos3</span>
+                        <span class="time">2:35 PM</span>
+                    </div>
+                    <p class="msg-text">Хто зараз піде в паті на рейтинг? Треба +1 саппорт.</p>
+                </div>
+            </div>
+
+            <div class="chat-msg">
+                <div class="msg-avatar purple-av">J</div>
+                <div class="msg-body">
+                    <div class="msg-top">
+                        <span class="user">JuggLover</span>
+                        <span class="time">2:36 PM</span>
+                    </div>
+                    <p class="msg-text">Новий патч 7.41 топовий, джаггер знову навалює 🔥</p>
+                </div>
+            </div>
+
+            <div class="chat-msg">
+                <div class="msg-avatar orange-av">A</div>
+                <div class="msg-body">
+                    <div class="msg-top">
+                        <span class="user">AM_Farmer</span>
+                        <span class="time">2:37 PM</span>
+                    </div>
+                    <p class="msg-text">Батлф'юрі на 12 хвилині — виграли гру без шансів.</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<a href="#top-anchor" class="btn-scroll-top" title="Повернутися нагору">▲</a>
+
+<div id="auth-modal" class="modal-overlay">
+    <label for="modal-toggle" class="modal-backdrop" aria-label="Закрити модальне вікно"></label>
+    <div class="modal-box">
+        <label for="modal-toggle" class="modal-close" aria-label="Закрити">&times;</label>
+        <div class="section-title">
+            <span class="title-icon">🔑</span>
+            <h2>Авторизація DotaHub</h2>
+        </div>
+        <form class="panel-form" action="/login" method="post">
+            <label for="m-email">Електронна пошта:</label>
+            <input type="email" id="m-email" name="email" placeholder="example@mail.com" required>
+            <span class="field-hint">Введіть коректну електронну пошту.</span>
+
+            <label for="m-pass">Пароль (мін. 6 символів):</label>
+            <input type="password" id="m-pass" name="password" minlength="6" placeholder="Введіть пароль" required>
+            <span class="field-hint">Пароль має містити щонайменше 6 символів.</span>
+
+            <div class="btn-row" style="margin-top: 1rem;">
+                <button type="submit" class="btn-green" style="width: 100%;">Увійти</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 DotaHub. Лабораторна робота №4.</p>
+</footer>
+
+</body>
+</html>
